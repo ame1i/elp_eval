@@ -1,1 +1,24 @@
-/<pattern recherché>/<pattern de remplacement>/<modificateurs>
+Qu'est ce qu'un callback?
+
+callback=fonction de rappel
+approche evenementielle
+ue fct de rappel n'a pas de paramètre
+--> fonction d'interruption
+--> un callback est une fonction en tant que paramètre
+
+pk?
+-- on ne sait pas prévoir l'avenir
+-- non deterministe
+-- contraintes : evenementielle
+a.forEach(f()) (f() est une fct callback)
+--> une fonction fournis par le dev mais invoqué par le système
+--> on ne sait pas elles seront invoquées
+
+---Execution synchrone et asynchrone--
+-JS est un système d'exploitation de fonctions (process est une fonction de déclenchement)
+-système best effort (/=ou temps réél , le process aura l'espace pour vivre car connaissance précise du tps ex de fonction, calculer le poids de chac1 des process)
+-repose sur un scheduler different pour Windows (préemptif: possibilité d'interrompre les fct) et linux(une fct qui a la main ne la rend pas tant qu'elle n'a pas finis son exec)
+intermediaire entre tps reel et best effort:
+-sys à pile de priorité d'evenement comme le navigateur
+set timeout(queue d'evenements) & peremt de placer une fct dans la pile d'evenement
+absorbe la gig mais on ne sait pas qd le prg s'executera
