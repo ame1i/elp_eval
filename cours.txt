@@ -1,0 +1,1 @@
+/<pattern recherché>/<pattern de remplacement>/<modificateurs>
